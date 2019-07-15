@@ -1,0 +1,19 @@
+{
+  "name": "fimushkin-landing",
+  "version": "1.0.0",
+  "main": "index.html",
+  "repository": "git@github.com:vsetaki/fimushkin-landing.git",
+  "author": "Andrei Chetverikov <createmyself@yandex.ru>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "yarn clean && yarn gulp"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-minify-inline": "^1.1.0",
+    "gulp-replace": "^1.0.0"
+  }
+}

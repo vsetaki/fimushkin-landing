@@ -36,10 +36,19 @@
       <p>
           Вы&nbsp;получите пошаговую систему освоения профессии и&nbsp;3&nbsp;ценных pdf-файла со&nbsp;шрифтами, цветами, программами и&nbsp;исходниками для веб-дизайнера
       </p>
-      <a href="vk://vk.com/app5898182_-65829973#s=383043&force=1" class="button">
+      <a id="button" href="vk://vk.com/app5898182_-65829973#s=383043&force=1" class="button">
         Зарегистрироваться бесплатно в ВК
       </a>
     </section>
   </main>
+  <script>
+    var button = document.getElementById('button');
+
+    if (button) {
+      button.addEventListener('click', function() {
+        fbq('track', 'Lead');
+      });
+    }
+  </script>
 </body>
 </html>
